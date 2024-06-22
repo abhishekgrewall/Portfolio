@@ -1,11 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll('.link a');
-
-    links.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault(); 
-            links.forEach(l => l.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Message sent!');
+    document.getElementById('contact-form').reset(); 
 });
