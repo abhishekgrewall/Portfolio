@@ -1,158 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
-
-* {
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    opacity: 0;
-    transition: opacity 3s;
-    background-color: rgb(250, 177, 5);
-}
-
-.hero {
-    width: 100%;
-    height: 100vh;
-
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 200px;
-}
-
-.nav .link ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    list-style: none;
-}
-
-.nav .link ul a {
-    text-decoration: none;
-    color: #2a2a2a;
-    font-weight: 600;
-    transition: all 2000ms ease-in-out;
-}
-
-ul a .active {
-    color: #f4637b;
-}
-
-.nav .link ul a:hover {
-    color: #f4637b;
-}
-
-.main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6rem;
-    margin-top: 70px;
-
-}
-
-.main .men {
-    width: 400px;
-    transition: all 2000ms ease;
-    cursor: pointer;
-}
-
-.main .men:hover{
-    transform: scale(1.3);
-}
-
-.main .main-detil {
-    text-align: center;
-    color: #2a2a2a;
-}
-
-.main .main-detil h1 {
-    font-size: 50px;
-
-}
-
-.main .main-detil h4 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.main .btn button {
-    padding: 8px 20px;
-    background: transparent;
-    border-radius: 30px;
-    border: 1px solid #2a2a2a;
-    margin-right: 1rem;
-    margin-bottom: 30px;
-    cursor: pointer;
-}
-
-.main .btn .btn-2 {
-    padding: 8px 30px;
-    background: #2a2a2a;
-    color: #fff;
-    border: none;
-    outline: none;
-    transition: all 2000ms ease-in-out;
-
-}
-
-.main .btn .btn-2:hover {
-    background: #f4637b;
-    transform: scale(1.1);
-}
-
-.social i {
-    color: #2a2a2a;
-    font-size: 40px;
-    margin: 0px 14px;
-    transition: all 2000ms ease-in-out;
-    cursor: pointer;
-}
-
-.social i:hover {
-    color: #f4637b;
-}
-
-.sub-btn a{
-    position: absolute;
-    bottom: 60px;
-    right: 50px;
-    padding: 10px 20px;
-    background: red;
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    border-radius: 6px;
-}
-
-#h2{
-    color: #000000;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 30px;
-    font-weight: 800;
-}
-.men{
-    border-radius:50%;
-    border:  10px solid #000000;
+    background-color: #f9e909;
+    color: #333;
     
 }
 
-
-.contact ul {
-    list-style-type: none;
-    padding: 0; 
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.contact ul li {
-    margin-bottom: 10px; }
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    
+}
 
-#H1{
-    color:#2b5614;
-    font-weight: 900;
+header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+   
+}
+
+.section {
+    padding: 10px 0;
+}
+
+.skills-grid, .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    
+}
+
+.skill, .project {
+    background:#FDFFE2;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin: 5px 0 3px;
+    font-size: 0.9rem;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #FDFFE2;;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+#contact-form button {
+    padding: 8px;
+    border: none;
+    background: #b4acac;
+    
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+#contact-form button:hover {
+    background: #352323;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0px 0;
+    font-size: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
