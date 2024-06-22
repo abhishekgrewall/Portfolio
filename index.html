@@ -1,52 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website using HTML & CSS and JavaScript</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="app.css">
-    <script src="app.js"></script>
-</head>
-
-<body onload="document.body.style.opacity='1'">
-    <div class="hero">
-        <div class="nav">
-            <div class="logo">
-                <h2 id="h2">ABHISHEK GREWAL</h2>
-            </div>
-            <div class="link">
-                <ul>
-                    
-                </ul>
-            </div>
-        </div>
-
-        <div class="main">
-            <img src="img/main.jpg" alt="men" class="men">
-            <div class="main-detil">
-                <p>Hello, I'm Abhishek GREWAL</p>
-                <h1 id="H1">web developer</h1>
-                <p>About Me:</p>
-                <p>I am a passionate frontend developer with experience in creating responsive and user-friendly web applications.</p>
-                <div class="btn">
-                </div>
-            
-                <div class="contact">
-                    <p>Contact Me:</p>
-                    <ul>
-                        <li>Email: shekku04@email.com</li>
-                        <li>Phone: 7206219507</li>
-                        <li>GitHub: <a href="https://github.com/Abhishekgrewall">ABHISHEK GREWAL</a></li>
-
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-    </div>
+    <script src="app.js" defer></script>
     
-</body>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1> My 𝙋𝙤𝙧𝙩𝙛𝙤𝙡𝙞𝙤</h1>
+           
+        </div>
+    </header>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I'm Abhishek Grewal, a passionate web developer with extensive experience in both frontend and backend development. I love creating innovative solutions and bringing ideas to life. My expertise spans various technologies and frameworks, and I have a strong command of Python. I'm always eager to learn new skills and take on challenging projects to expand my knowledge and capabilities. Let's connect and collaborate on exciting web development endeavors!</p>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill">Python</div>
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">React</div>
+                    <div class="skill">Node.js and Express.js</div>
+                    <div class="skill">API</div>
+                    <div class="skill">Bootstrap ,Material-UI ,Tailwind CSS</div>
+                    <div class="skill">MongoDB</div>
+                    <div class="skill">Git</div>
+                   <div class="skill">SQL</div>
+                   <div class="skill">Material-UI</div>
+             
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project">
+                        <h3>Movies Application</h3>
+                        <p>Developed a feature-rich movies application using React to browse, search, and display movie information. <br> Integrated third-party APIs (The Movie Database API) to fetch and display movie details, including ratings, genres, and reviews. <br> Implemented a responsive and intuitive user interface to ensure a seamless user experience across different devices.</p>
+                        <h3><a href="https://moviescage.vercel.app/">MOVIES CAGE(Vercel)</a></h3>
 
+                    </div>
+                    <div class="project">
+                        <h3>Weather Application</h3>
+                        <p>Developed a dynamic weather application using HTML, CSS, and JavaScript to provide real-time weather updates for any location globally. <br> Integrated third-party APIs (OpenWeatherMap) to fetch and display current weather conditions, including temperature, humidity, and wind speed. <br> Implemented a user-friendly interface with responsive design to ensure seamless experience across various devices and screen sizes.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Portfolio Website</h3>
+                        <p>Created a professional portfolio website using HTML, CSS, and JavaScript to showcase personal projects and skills. <br> Designed and implemented a responsive layout to ensure optimal viewing experience across various devices and screen sizes. <br> Integrated interactive elements such as project galleries, contact forms, and navigation menus to enhance user engagement.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Python Health Assistant App</h3>
+                        <p>Developed a Python-based health assistant application specializing in cough and fever detection, coupled with medicine recommendations. <br> Implemented a symptom checker feature allowing users to input symptoms related to cough and fever, with the app providing preliminary diagnosis suggestions based on input data.</p>
+                    </div>
+                    
+                        <div class="project">
+                            <h3>Resume</h3>
+                            <p>Developed a modern and visually appealing resume using HTML and CSS, showcasing professional experience, skills, and achievements.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <p>GitHub: <a href="https://github.com/abhishekgrewall">https://github.com/abhishekgrewall</a></p>
+                <p><i class="fas fa-envelope"></i> Gmail: <a href="mailto:shekkugrewal720@gmail.com">shekkugrewal720@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: 7206219507</p>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Abhishek Grewal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
